@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Starter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- navBar -->
+    <header>
+        <div class="content">
+            <h1>Logo.</h1>
+            <ul>
+                <a href="#home" id="home"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="productsPage.html"><li>Products</li></a>
+                <a href="deals.html"><li>Special</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
+            <div class="icon">
+                <div class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"><p class="cartcount">0</p></i>
+                </div>
+                <button class="login-btn"><i class="fa-regular fa-circle-user"></i></button>
+            </div>
+            <div class="menu">
+                <button><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+
+
+      <!-- LOGIN & SIGN UP PAGE -->
+         <div class="overlay2"></div>
+        <div class="form-section ">
+            <button class="close-form"><i class="fa-solid fa-x"></i></button>
+            <section>
+            <div class="login-form">
+                <h1>Login</h1>
+                <div class="select">
+                    <input type="text" name="" class="admin"  id="username" placeholder="Username">
+                    <i class="fa-solid fa-user"></i>
+                    <small></small>
+                </div>
+                <div class="select">
+                    <input type="password" name="" class="admin-pass" id="password" placeholder="Password">
+                    <i class="fa-solid fa-lock"></i>
+                    <small></small>
+                </div>
+                <div class="checkbox">
+                    <div class="check">
+                        <input type="checkbox" name="" id="remember">
+                        <label for="remember" id="checklabel">Remember me</label>
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button class="submit-btn">Login</button>
+                <div class="register">
+                    <p>Don't have an account? <a href="#" class="register-">Register</a></p>
+                </div>
+            </div>
+
+
+
+            <!-- Register form -->
+             <div class="register-form">
+                <h1>Register</h1>
+                <div class="input-type">
+                    <input type="text" name="" id="userName" placeholder="Username">
+                    <i class="fa-solid fa-user"></i>
+                    <small></small>
+                </div>
+                <div class="input-type">
+                    <input type="email" name="" id="userEmail" placeholder="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <small></small>
+                </div>
+                <div class="input-type">
+                    <input type="password" name="" id="userPass" placeholder="Password">
+                    <i class="fa-solid fa-lock"></i>
+                    <small></small>
+                </div>
+                <div class="input-type">
+                    <input type="password" name="" id="userMatch" placeholder="Confirm password">
+                    <i class="fa-solid fa-unlock-keyhole"></i>
+                    <small></small>
+                </div>
+                <div class="accept">
+                    <input type="checkbox" name="accept">
+                    <label for="accept">I accept all terms and conditons</label>
+                </div>
+                <button class="register-btn">Register now</button>
+                <p>Already have an account? <a href="#" class="login-">Login now</a></p>
+             </div>
+            </section>
+
+            
+            <!-- Successful Login -->
+             <div class="success-notification">
+                <i class="fa-regular fa-circle-check"></i>
+                <h1>Successful Login!</h1>
+             </div>
+        </div>
+
+    <!-- CART -->
+     <div class="overlay"></div>
+    <div class="cart-container ">
+        <div class="cart-header">
+            <h1>My cart</h1>
+            <button class="close-cart"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <section>
+            <ul class="cart-list-container"></ul>
+            <div class="empty-cart-mess">
+                <i class="fa-solid fa-face-sad-cry"></i>
+                <h1>Your cart's empty!</h1>
+                <p>Go grab some delicious chocolate sweets right now!</p>
+            </div>
+        </section>
+        
+        <div class="checkout-section">
+            <section>
+                 <label for="">Total: <span class="total-price" >$19.00</span></label>
+                 <button class="checkout">Checkout</button>
+            </section>
+            </div>
+    </div>
+
+
+
+    <!-- Image Slider -->
+     <div class="img-slider" id="home">
+        <div class="content">
+            <div class="slide">
+                <img src="img/chocoThumb/banner.png" alt="">
+                <div class="text-content">
+                    <h1>"Melts in your mouth, not in your </h1>
+                    <h1>hands Chocolate covere"</h1>
+                    <p>d raisins, cherries, orange slices and strawberries</p>
+                    <p> all count as fruit, so eat as many as you want!</p>
+                    <button>Shop now!</button>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="img/chocoThumb/banners.png" alt="">
+                <div class="text-content">
+                    <h1>"It’s not Terry’s, it’s mine"</h1>
+                    <p>Everywhere in the world, there are tensions-</p>
+                    <p>economic, political,and religious</p>
+                    <p>.So we need chocolate.</p>
+                    <button>Discover now!</button>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="img/chocoThumb/bannerss.png" alt="">
+                <div class="text-content">
+                    <h1>"What’s Better Than Chocolate? — Nothing!"</h1>
+                    <p>There are four basic food groups: milk chocolate, dark chocolate, </p>
+                    <p>white chocolate, and chocolate truffles.</p>
+                    <button>Discover now!</button>
+                </div>
+            </div>
+        </div>
+        <button class="right"><i class="fa-solid fa-caret-right"></i></button>
+        <button class="left"><i class="fa-solid fa-caret-left"></i></button>
+
+        <div class="bullets-slider">
+            <span class="label active"></span>
+            <span></span>
+            <span></span>
+        </div>
+     </div>
+
+     <div class="item-notification">
+        <div class="notifi-text">
+            <i class="fa-solid fa-circle-check"></i>
+            <h1>Added!</h1>
+        </div>
+        <div class="meter-bar"></div>
+     </div>
+
+     <!-- Body -->
+      <div class="container">
+        <h1 id="myProduct">Explore my Chocolate</h1>
+        <div class="main-card">
+            <div class="high-text">
+                <h2>Best Seller</h2>
+                <a href="productsPage.html">Show all <span><i class="fa-solid fa-angles-right"></i></span></a>
+            </div>
+            <div class="card-grid">
+                <!-- <div class="card seller">
+                    <div class="product-img">
+                        <img src="img/img1.jpg" alt="">
+                    </div>
+                    <label for="">Terry's Chocolate Orange </label>
+                    <p>$6.99</p>
+                    <button id="addBtn">Add to cart <span><i class="fa-solid fa-bag-shopping"></i></span></button>
+                </div> -->
+                <!-- <div class="card seller"></div>
+                <div class="card seller"></div>
+                <div class="card seller"></div>
+                <div class="card seller"></div> -->
+            </div>
+        </div>
+
+        <!-- Most popular -->
+         <div class="main-card">
+            <div class="high-text">
+                <h2>On Sale!</h2>
+                <a href="productsPage.html">Show all <span><i class="fa-solid fa-angles-right"></i></span></a>
+            </div>
+            <div class="card-grid sale">
+                <!-- <div class="card sale">
+                    <div class="discount-wrapper">-36%</div>
+                    <div class="product-img">
+                        <img src="img/chot.avif" alt="">
+                    </div>
+                    <label for="">Terry's Chocolate Orange </label>
+                    <p>$4.49 <span>$6.99</span></p>
+                    <button>Add to cart <span><i class="fa-solid fa-bag-shopping"></i></span></button>
+                </div> -->
+                <!-- <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div> -->
+            </div>
+        </div>
+
+        <!-- Others-->
+         <div class="main-card">
+            <div class="high-text">
+                <h2>Others</h2>
+                <a href="productsPage.html">Show all <span><i class="fa-solid fa-angles-right"></i></span></a>
+            </div>
+            <div class="card-grid other">
+                <!-- <div class="card">
+                    <div class="product-img">
+                        <img src="img/img1.jpg" alt="">
+                    </div>
+                    <label for="">Terry's Chocolate Orange </label>
+                    <p>$6.99</p>
+                    <button>Add to cart <span><i class="fa-solid fa-bag-shopping"></i></span></button>
+                </div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div> -->
+            </div>
+      </div>
+    </div>
+
+      <!-- Footer -->
+       
+        <div class="social-footer">
+            <p>Follow me</p>
+            <div class="social-credit">
+                <a href="https://www.youtube.com/"  target="_blank"><button name-Atribute="Youtube" class="social-btn"><i class="fa-brands fa-youtube"></i></button></a>
+                <a href="https://www.facebook.com/?locale=vi_VN" target="_blank"><button name-Atribute="Facebook" class="social-btn"><i class="fa-brands fa-facebook"></i></button></a>
+                <a href="https://x.com/?lang=vi" target="_blank"><button name-Atribute="Twitter" class="social-btn"><i class="fa-brands fa-twitter"></i></button></a>
+            </div>
+        </div>
+        <footer>
+            <div class="grid-information">
+                <div class="quick-information first">
+                    <label for="">Brand Information</label>
+                    <p>Logo name:Hung Chocolate</p>
+                    <p>Student: Nguyễn Tuấn Hùng</p>
+                    <p>Class: CD25TKDH</p>
+                </div>
+                <div class="quick-information">
+                    <label for="">Contact & Support</label>
+                    <p>Address:N/a</p>
+                    <p>Hotline: 098764512</p>
+                    <p>Email:HungChocolate98@gmail.com</p>
+                </div>
+                <div class="quick-information">
+                <label for="">Quick links</label>
+                    <p>About me</p>
+                    <p>Blog & Stories</p>
+                    <p>Contact me</p>
+                </div>
+                
+            </div>
+            <div class="qr-code">
+                <div class="qr-img">
+                    <img src="img/user/polish cow.png" alt="">
+                </div>
+                <label for="">Copyright:© 2026 HungChocolate. All right reserved</label>
+            </div>
+       </footer>
+
+     
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,348 @@
+:root {
+  --choco-bg: #1a0f0a;
+  --choco-bg-light: #5c4638;
+  --choco-surface: #2a1710;
+  --choco-card: #3b2317;
+  --choco-accent: #8b5e34;
+  --choco-accent-2: #d4a373;
+  --text-primary: #fffaf5;
+  --text-secondary: #e2c8b3;
+  --text-darker: #caa98b;
+
+  /* Coca dream */
+  --choco-c1:#3E2723;
+  --choco-c2:#5D4037;
+  --choco-c3:#5D4037;
+  --choco-c4:#a1887f;
+  --choco-c5:#d7ccc8;
+
+  --overlay: rgba(0, 0, 0, 0.5)
+}
+
+
+
+body{
+    background: var(--choco-c5);
+}
+
+.product-thumb{
+    /* margin-top: 80px; */
+    width: 100%;
+    height: 24vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--choco-surface);
+}
+.product-thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 1;
+}
+
+.product-thumb h1{
+    position: absolute;
+    font-size: 4.6rem;
+    color: var(--choco-bg);
+    font-weight: 760;
+    font-family: 'poppins';
+}
+
+.type-container{
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 24px;
+
+}
+
+
+.type-container span{
+    text-align: center;
+    font-size: 1.6rem;
+   width:150px;
+   background: transparent;
+   color: var(--choco-bg);
+   padding: 8px 12px;
+   border-radius: 50px;
+   border: 2px solid var(--choco-bg);
+   font-weight: 660;
+   transition:  background-color 200ms ease-in-out;
+}
+
+.type-container span:hover{
+    background: var(--choco-bg);
+    color: var(--choco-accent-2);
+}
+.type-container span.active{
+    background: var(--choco-bg);
+    color: var(--choco-accent-2);
+}
+
+.prod-container{
+    width: 80%;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-Messenger{
+    width: 80%;
+    height: 400px;
+    /* background: var(--choco-c4); */
+    color: var(--choco-bg);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    pointer-events: none;
+    border-radius: 1rem;
+    display: none;
+    pointer-events: none;
+}
+
+.error-Messenger i{
+    font-size: 10rem;
+}
+.error-Messenger h1{
+    font-size: 2.5rem;
+}
+.error-Messenger p{
+    font-size: 1.6rem;
+}
+
+.prod-grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+    /* display: none; */
+}
+
+.prod-grid-container li{
+    animation: show 400ms ease-in-out;
+    transition: 200ms ease-in-out;
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    50%{
+        opacity: 0.5;
+        /* transform: translateY(0); */
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+ ul{
+    list-style: none;
+}
+
+.saf-container{
+    width: 80%;
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 14px;
+}
+
+.menu-dropdown{
+    display: flex;
+    gap: 8px;
+}
+
+.menu-dropdown button{
+    width: 50px;
+    height: 50;
+    font-size:1.4rem;
+    border: none;
+    transition: background-color 200ms ease-in-out;
+    border-radius: 4px;
+    background: var(--choco-card);
+    color: var(--choco-accent-2);
+}
+
+.dropdown-wrapper{
+    position: relative;
+    display: flex;
+    /* background: red; */
+    width: 160px;
+    height: 50px;
+    font-size: 1.4rem;
+    align-items: center;
+    border-radius: 8px;
+    color: var(--choco-surface);
+    border: 2px solid var(--choco-surface);
+    font-weight: bold;
+    z-index: 80;
+}
+
+.dropdown-wrapper p{
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.dropdown-wrapper i{
+    transition: 200ms ease-in-out;
+    margin-right: 4px;
+}
+
+.dropdown-wrapper i.open{
+    transform: rotate(180deg);
+}
+
+.dropdown-wrapper ul{
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    left: 0;
+    /* background: blue; */
+    list-style: none;
+    border-radius: 4px;
+    border: 1px solid var(--choco-card);
+    background: var(--choco-c5);
+    opacity: 0;
+    transition: 200ms  ease-in-out;
+}
+.dropdown-wrapper ul li{
+    margin: 4px;
+    /* background: green; */
+    height: 100%;
+    padding: 4px 0;
+    border-radius: 4px;
+}
+
+.dropdown-wrapper ul li.active{
+    background: rgba(160, 160, 160, 0.61);
+}
+
+.dropdown-wrapper ul li:hover{
+    background: rgba(160, 160, 160, 0.61);
+}
+
+.dropdown-wrapper.active .dropdown-container{
+    opacity: 1;
+}
+
+/* Search bar */
+.search-bar{
+    display: flex;
+    align-items: center;
+
+}
+
+.search-bar input {
+    width:240px;
+    height: 50px;
+    padding: 0 6px;
+    font-size: 1.2rem;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    border: 2px solid var(--choco-card);
+    color: var(--choco-surface);
+    border-right: none;
+    font-weight: 670;
+    background: transparent;
+}
+
+.search-bar input:focus{
+    border-color: var(--choco-bg);
+}
+.search-bar button{
+    width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
+    color: var(--choco-accent-2);
+    background: var(--choco-surface);
+    border: 2px solid var(--choco-surface);
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+}
+
+/* FONT FAMILY */
+h1{
+    font-family: 'poppins',sans-serif;
+}
+
+p{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 570;
+}
+
+label{
+    font-family: 'poppins',sans-serif;
+    font-weight: 400;
+}
+
+span{
+    font-family: 'poppins';
+}
+
+button{
+    font-family: 'poppins',sans-serif;
+    font-size: 1.6rem;
+}
+
+@media (max-width:1900px){
+    .prod-container{
+        max-width: 90%;
+        width: 90%;
+    }
+}
+
+@media (max-width:1800px) {
+    .prod-container{
+        max-width: 90%;
+        min-width: 80%;
+    }
+    .card label{
+        font-size: 1.5rem;
+        height: 60px;
+    }
+
+    .card > p{
+        font-size: 1.4rem;
+        margin-top: 8px;
+    }
+
+    .card > button{
+        font-size: 1.4rem;
+    }
+
+    .card .product-img{
+        min-height: 200px;
+        height: 220px;
+    }
+
+    .type-container span{
+        font-size: 1.4rem;
+        width: 125px;
+    }
+    .saf-container{
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .product-thumb h1{
+        font-size: 3.2rem;
+    }
+
+    .product-thumb{
+        max-height: 20vh;
+    }
+}
+
+

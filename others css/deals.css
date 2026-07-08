@@ -1,0 +1,51 @@
+:root {
+  --choco-bg: #1a0f0a;
+  --choco-bg-light: #5c4638;
+  --choco-surface: #2a1710;
+  --choco-card: #3b2317;
+  --choco-accent: #8b5e34;
+  --choco-accent-2: #d4a373;
+  --text-primary: #fffaf5;
+  --text-secondary: #e2c8b3;
+  --text-darker: #caa98b;
+
+  /* Coca dream */
+  --choco-c1:#3E2723;
+  --choco-c2:#5D4037;
+  --choco-c3:#5D4037;
+  --choco-c4:#a1887f;
+  --choco-c5:#d7ccc8;
+
+  --overlay: rgba(0, 0, 0, 0.5)
+}
+
+
+
+
+.prod-container{
+    margin-top: 6vh;
+}
+
+.wanna{
+    width: 100%;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.wanna p{
+    font-size: 1.6rem;
+    color: var(--choco-card);
+}
+
+.wanna button{
+    background: var(--choco-surface);
+    padding: 4px 6px;
+    color: var(--choco-accent-2);
+    border-radius: 4px;
+    border: none;
+    font-family: 'Montserrat',sans-serif;
+    box-shadow:  0 4px var(--choco-accent);
+}

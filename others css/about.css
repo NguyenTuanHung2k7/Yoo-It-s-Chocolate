@@ -1,0 +1,330 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+
+:root {
+  --choco-bg: #1a0f0a;
+  --choco-bg-light: #5c4638;
+  --choco-surface: #2a1710;
+  --choco-card: #3b2317;
+  --choco-accent: #8b5e34;
+  --choco-accent-2: #d4a373;
+  --text-primary: #fffaf5;
+  --text-secondary: #e2c8b3;
+  --text-darker: #caa98b;
+
+  /* Coca dream */
+  --choco-c1:#3E2723;
+  --choco-c2:#5D4037;
+  --choco-c3:#5D4037;
+  --choco-c4:#a1887f;
+  --choco-c5:#d7ccc8;
+
+  --overlay: rgba(0, 0, 0, 0.5)
+}
+
+h1{
+    font-family: 'poppins',sans-serif;
+}
+
+p,a{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 540;
+}
+
+.about-form-container{
+    margin-top: 4vh;
+    width: 70%;
+    /* box-shadow: 0 4px 12px black; */
+    border-radius: 1rem;
+}
+.about-form-container .about-admin{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+
+.about-admin .text-info{
+    width: 100%;
+    padding: 0 40px;
+    background: var(--choco-accent-2);
+    color: var(--choco-bg);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    border-radius: 1rem 0 0 1rem;
+    border: 2px solid var(--choco-bg);
+    border-right: none;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-admin .text-info .about-me h1{
+    font-size: 3.5rem;
+    margin: 30px 0 14px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.text-info h1::before,.my-dream h1::before{
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 4px;
+    bottom: -4px;
+    left: 0;
+    background: var(--choco-bg-light);
+}
+.about-admin .text-info p{
+    font-size: 1.8rem;
+    color: var(--choco-c1);
+}
+
+.my-dream{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.my-dream h1{
+    font-size: 3rem;
+    position: relative;
+    width: fit-content;
+    margin: 24px 0 14px;
+}
+.my-dream p{
+    margin: 0 0 38px;
+}
+.admin-info {
+    width: 100%;
+    background: var(--choco-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 1rem 1rem 0;
+    border: 2px solid var(--choco-accent);
+    border-left: none;
+}
+
+.admin-info h1{
+    color: var(--choco-accent-2);
+    margin-top: 8px;
+    font-size: 2.5rem;
+}
+
+.admin-info .admin-img{
+    width: 280px;
+    height:280px;
+    overflow: hidden;
+    background: transparent;
+    border: 8px solid var(--choco-accent);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0 24px;
+    
+}
+
+.admin-img .admin-img-outline{
+    width: 96%;
+    height: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--choco-c2);
+    overflow: hidden;
+    border-radius: 50%;
+    transition: transform 200ms ease-in-out;
+}
+
+
+.admin-img  .admin-img-outline img{
+    width: 94%;
+    height: 94%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.admin-img:hover .admin-img-outline {
+    transform: scale(0.98);
+}
+
+.admin-info span{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--choco-accent-2);
+}
+
+.social-credit{
+    display: flex;
+    gap: 12px;
+    margin: 16px 0 24px;
+}
+
+.social-credit a{
+    text-decoration: none;
+}
+
+.social-credit button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--choco-surface);
+    transition: 200ms ease-in-out;
+    background: var(--choco-accent-2);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* SOCIAL CREDIT */
+
+
+.social-credit button:hover{
+    border: 2px solid var(--choco-accent-2);
+    background: transparent;
+    color: var(--choco-accent-2);
+}
+
+.social-credit button::before{
+    position: absolute;
+    content: attr(name-Atribute);
+    transition: 200ms ease-in-out;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    font-family: 'roboto slab';
+    padding: 2px 6px;
+    background: var(--choco-accent-2);
+    opacity: 0;
+    pointer-events: none;
+    transform: rotate(45deg);
+}
+
+.social-credit button:hover::before{
+    opacity: 1;
+    color: var(--choco-bg);
+    transform: translateY(-48px);
+}
+
+.social-credit button i {
+    margin-top: 3px;
+}
+
+.social-credit button::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height:0;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-top: 8px solid var(--choco-accent-2);
+    transform: rotate(45deg);
+    transition: 200ms ease-in-out;
+    opacity: 0;
+}
+
+.social-credit button:hover::after{
+    transform: translateY(-32px);
+    opacity: 1;
+}
+.social-footer-about{
+    height: 100px;
+    width: 100%;
+    padding: 12px;
+    box-shadow: 0 4px 12px var(--choco-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--choco-surface);
+    margin-top: 21vh;
+}
+
+
+#about{
+    position: relative;
+}
+
+#about::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 4px;
+    background: var(--choco-accent);
+}
+
+.product-thumb{
+    width: 100%;
+    height: 24vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 1;
+}
+
+.product-thumb h1{
+    position: absolute;
+    font-size: 4.6rem;
+    color: var(--choco-bg);
+    font-weight: 760;
+    font-family: 'poppins';
+}
+
+@media (max-width:1600px) {
+
+    .about-form-container{
+        width: 74%;
+        margin-top: 6vh;
+    }
+
+    .about-admin .text-info .about-me h1
+    {
+        font-size: 3rem;
+        margin: 26px 0 12px;
+    }
+
+    .about-admin .text-info p,
+    .my-dream p,
+    .about-admin .text-info p,
+    .admin-info span{
+        font-size: 1.4rem;
+    }
+    
+    .my-dream h1{
+        font-size: 2.7rem;
+    }
+
+    .admin-info h1{
+        font-size: 2.4rem;
+    }
+
+    .admin-info .admin-img{
+        width: 220px;
+        height: 220px;
+    }
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="others css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+     <!-- navBar -->
+    <header>
+        <div class="content">
+            <h1>Logo.</h1>
+            <ul>
+                <a href="index.html" ><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="#" id="home"><li>Products</li></a>
+                <a href="deals.html"><li>Special</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
+            <div class="icon">
+                <div class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"><p class="cartcount">0</p></i>
+                </div>
+                <button class="login-btn"><i class="fa-regular fa-circle-user"></i></button>
+            </div>
+        </div>
+    </header>
+
+
+
+      <!-- LOGIN & SIGN UP PAGE -->
+         <div class="overlay2"></div>
+        <div class="form-section ">
+            <button class="close-form"><i class="fa-solid fa-x"></i></button>
+            <section>
+            <div class="login-form">
+                <h1>Login</h1>
+                <div class="select">
+                    <input type="text" name="" class="admin"  id="username" placeholder="Username">
+                    <i class="fa-solid fa-user"></i>
+                    <small></small>
+                </div>
+                <div class="select">
+                    <input type="password" name="" class="admin-pass" id="password" placeholder="Password">
+                    <i class="fa-solid fa-lock"></i>
+                    <small></small>
+                </div>
+                <div class="checkbox">
+                    <div class="check">
+                        <input type="checkbox" name="" id="remember">
+                        <label for="remember" id="checklabel">Remember me</label>
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button class="submit-btn">Login</button>
+                <div class="register">
+                    <p>Don't have an account? <a href="#" class="register-">Register</a></p>
+                </div>
+            </div>
+
+
+
+            <!-- Register form -->
+             <div class="register-form">
+                <h1>Register</h1>
+                <div class="input-type">
+                    <input type="text" name="" id="userName" placeholder="Username">
+                    <i class="fa-solid fa-user"></i>
+                    <small></small>
+                </div>
+                <div class="input-type">
+                    <input type="email" name="" id="userEmail" placeholder="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <small></small>
+                </div>
+                <div class="input-type">
+                    <input type="password" name="" id="userPass" placeholder="Password">
+                    <i class="fa-solid fa-lock"></i>
+                    <small></small>
+                </div>
+                <div class="input-type">
+                    <input type="password" name="" id="userMatch" placeholder="Confirm password">
+                    <i class="fa-solid fa-unlock-keyhole"></i>
+                    <small></small>
+                </div>
+                <div class="accept">
+                    <input type="checkbox" name="accept">
+                    <label for="accept">I accept all terms and conditons</label>
+                </div>
+                <button class="register-btn">Register now</button>
+                <p>Already have an account? <a href="#" class="login-">Login now</a></p>
+             </div>
+            </section>
+
+            
+            <!-- Successful Login -->
+             <div class="success-notification">
+                <i class="fa-regular fa-circle-check"></i>
+                <h1>Successful Login!</h1>
+             </div>
+        </div>
+
+    <!-- CART -->
+     <div class="overlay"></div>
+    <div class="cart-container ">
+        <div class="cart-header">
+            <h1>My cart</h1>
+            <button class="close-cart"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <section>
+            <ul class="cart-list-container"></ul>
+            <div class="empty-cart-mess">
+                <i class="fa-solid fa-face-sad-cry"></i>
+                <h1>Your cart's empty!</h1>
+                <p>Go grab some delicious chocolate sweets right now!</p>
+            </div>
+        </section>
+        
+        <div class="checkout-section">
+            <section>
+                 <label for="">Total: <span class="total-price" >$19.00</span></label>
+                 <button class="checkout">Checkout</button>
+            </section>
+            </div>
+    </div>
+
+
+
+    <!-- PRODUCT PAGE -->
+     <div class="product-thumb">
+        <img src="img/user/wooden-Plank.png" alt="">
+        <h1>Assorted Chocolates</h1>
+     </div>
+     
+     <div class="type-container">
+        <span class="active" data-type="all">All</span>
+        <span data-type="milk">Milk</span>
+        <span data-type="dark">Dark</span>
+        <span data-type="truffle">Truffle</span>
+     </div>
+
+
+   <!-- SEARCH AND FILTER CATEGORY -->
+    <div class="saf-container">
+        <div class="menu-dropdown">
+            <button><i class="fa-solid fa-filter"></i></button>
+            <div class="dropdown-wrapper" tabindex="0">
+                <p>All </p>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="dropdown-container">
+                    <!-- <li>hi</li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" name="" class="search-input" placeholder="Search item here!...">
+            <button><i class="fa-brands fa-sistrix"></i></button>
+        </div>
+       </div>
+
+
+     <!-- prod container -->
+      <div class="prod-container">
+        <ul class="prod-grid-container">
+            <!-- <li class="card">
+                    <div class="product-img">
+                        <img src="img/img1.jpg" alt="">
+                    </div>
+                    <label for="">Terry's Chocolate Orange </label>
+                    <p>$6.99</p>
+                    <button id="addBtn">Add to cart <span><i class="fa-solid fa-bag-shopping"></i></span></button>
+                </li> -->
+        </ul>
+        <div class="error-Messenger">
+            <i class="fa-solid fa-heart-crack"></i>
+            <h1>Opps! There're no items found</h1>
+            <p>We will update more products as soon as possible;))</p>
+        </div>
+      </div>
+
+     <div class="item-notification">
+        <div class="notifi-text">
+            <i class="fa-solid fa-circle-check"></i>
+            <h1>Added!</h1>
+        </div>
+        <div class="meter-bar"></div>
+     </div>      
+
+
+
+      <!-- Footer -->
+       
+        <div class="social-footer">
+            <p>Follow me</p>
+            <div class="social-credit">
+                <a href="https://www.youtube.com/"  target="_blank"><button name-Atribute="Youtube" class="social-btn"><i class="fa-brands fa-youtube"></i></button></a>
+                <a href="https://www.facebook.com/?locale=vi_VN" target="_blank"><button name-Atribute="Facebook" class="social-btn"><i class="fa-brands fa-facebook"></i></button></a>
+                <a href="https://x.com/?lang=vi" target="_blank"><button name-Atribute="Twitter" class="social-btn"><i class="fa-brands fa-twitter"></i></button></a>
+            </div>
+        </div>
+        <footer>
+            <div class="grid-information">
+                <div class="quick-information">
+                    <label for="">Brand Information</label>
+                    <p>Logo name:Hung Chocolate</p>
+                    <p>Student: Nguyễn Tuấn Hùng</p>
+                    <p>Class: CD25TKDH</p>
+                </div>
+                <div class="quick-information">
+                    <label for="">Contact & Support</label>
+                    <p>Address:N/a</p>
+                    <p>Hotline: 098764512</p>
+                    <p>Email:HungChocolate98@gmail.com</p>
+                </div>
+                <div class="quick-information">
+                <label for="">Quick links</label>
+                    <p>About me</p>
+                    <p>Blog & Stories</p>
+                    <p>Contact me</p>
+                </div>
+                
+            </div>
+            <div class="qr-code">
+                <div class="qr-img">
+                    <img src="img/user/polish cow.png" alt="">
+                </div>
+                <label for="">Copyright:© 2026 HungChocolate. All right reserved</label>
+            </div>
+       </footer>
+
+     
+  
+    <script src="products.js"></script>
+    <script src="others js/productspage.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
